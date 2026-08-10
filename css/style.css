@@ -2015,3 +2015,156 @@ h2 {
     font-size: 0.68rem;
   }
 }
+
+.specialties-section {
+    padding: 130px 24px;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(181, 61, 53, 0.1),
+            transparent 32%
+        ),
+        #0f0e0d;
+    color: #f4efe7;
+}
+
+.specialties-container {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+.specialties-heading {
+    max-width: 720px;
+    margin-bottom: 80px;
+}
+
+.section-eyebrow,
+.specialty-label {
+    display: block;
+    margin-bottom: 18px;
+    color: #b99a5e;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.specialties-heading h2 {
+    margin: 0 0 25px;
+    font-family: var(--font-title, Georgia, serif);
+    font-size: clamp(2.7rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.specialties-heading h2 em {
+    display: block;
+    color: #b99a5e;
+    font-weight: 400;
+}
+
+.specialties-heading p {
+    max-width: 600px;
+    margin: 0;
+    color: #aaa39b;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.specialty-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+    padding: 70px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.specialty-item:last-of-type {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.specialty-number {
+    color: #b53d35;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.specialty-content {
+    max-width: 780px;
+}
+
+.specialty-content h3 {
+    margin: 0 0 30px;
+    font-family: var(--font-title, Georgia, serif);
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.specialty-content p {
+    margin: 0 0 18px;
+    color: #aaa39b;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.specialty-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 22px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #b99a5e;
+    color: #f4efe7;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.specialty-link:hover {
+    gap: 20px;
+    color: #b99a5e;
+}
+
+.specialties-disclaimer {
+    max-width: 680px;
+    margin: 32px 0 0 160px;
+    color: #77716b;
+    font-size: 0.78rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .specialties-section {
+        padding: 85px 22px;
+    }
+
+    .specialties-heading {
+        margin-bottom: 55px;
+    }
+
+    .specialties-heading h2 {
+        font-size: clamp(2.6rem, 13vw, 4rem);
+        line-height: 1;
+    }
+
+    .specialty-item {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 55px 0;
+    }
+
+    .specialty-content h3 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .specialties-disclaimer {
+        margin-left: 0;
+    }
+}
