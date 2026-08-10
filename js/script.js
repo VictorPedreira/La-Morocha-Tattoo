@@ -27,7 +27,7 @@
   });
 
   const revealTargets = document.querySelectorAll(
-    ".section-heading, .intro-grid, .service-card, .process-intro, .process-list li, .portfolio-card, .about-visual, .about-content, .faq-layout, .contact-card",
+    ".removal-hero-content, .removal-hero-visual, .removal-intro-grid, .removal-trust-grid article, .result-card, .treatment-card, .removal-process-intro, .removal-process li, .removal-about-symbol, .removal-about-content, .faq-layout, .contact-card",
   );
 
   if (

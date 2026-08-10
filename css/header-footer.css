@@ -596,3 +596,132 @@ button {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Mantém o cabeçalho e o menu acima de todas as seções */
+.site-header,
+.site-header.is-scrolled {
+  z-index: 9999;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 980px) {
+  .site-header {
+    isolation: isolate;
+  }
+
+  .header-inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-toggle,
+  .header-inner .brand {
+    position: relative;
+    z-index: 3;
+  }
+
+  .primary-navigation {
+    position: fixed !important;
+    z-index: 1;
+
+    inset: var(--header-height) 0 0 !important;
+    width: 100%;
+    height: auto;
+
+    padding: 38px 24px 80px;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    background: #12110f !important;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translateY(-12px);
+
+    transition:
+      opacity 220ms ease,
+      transform 220ms ease,
+      visibility 220ms ease;
+  }
+
+  .site-header.is-scrolled .primary-navigation {
+    inset: 72px 0 0 !important;
+  }
+
+  .primary-navigation.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  body.menu-open main,
+  body.menu-open .floating-whatsapp {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 980px) {
+  /* O blur estava limitando o menu depois da rolagem */
+  .site-header.is-scrolled {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+    transform: none !important;
+    overflow: visible !important;
+
+    background: rgba(18, 17, 15, 0.98);
+  }
+
+  .site-header,
+  .header-inner {
+    overflow: visible !important;
+  }
+
+  .primary-navigation {
+    position: fixed !important;
+
+    inset: 72px 0 auto !important;
+
+    width: 100vw !important;
+    height: calc(100dvh - 72px) !important;
+    max-height: calc(100dvh - 72px) !important;
+
+    padding: 38px 24px 80px;
+
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+
+    background: #12110f !important;
+
+    z-index: 9998 !important;
+  }
+
+  .primary-navigation.is-open {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+  }
+
+  .menu-toggle,
+  .header-inner .brand {
+    position: relative;
+    z-index: 9999 !important;
+  }
+}
