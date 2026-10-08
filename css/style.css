@@ -276,7 +276,7 @@ h1.removal-eyebrow {
       rgba(18, 17, 15, 0.38) 100%
     ),
     linear-gradient(0deg, rgba(18, 17, 15, 0.55), transparent 35%),
-    url("../assets/images/hero-desktop.png");
+    url("../assets/images/hero-desktop.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -864,7 +864,7 @@ h1.removal-eyebrow {
         rgba(18, 17, 15, 0.48) 100%
       ),
       linear-gradient(90deg, rgba(18, 17, 15, 0.7), rgba(18, 17, 15, 0.18)),
-      url("../assets/images/hero-desktop.png");
+      url("../assets/images/hero-desktop.webp");
     background-position: 68% center;
   }
 }

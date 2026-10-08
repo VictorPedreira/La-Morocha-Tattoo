@@ -38,8 +38,6 @@ ocultar alguma, use "fixar" / "ocultar" no painel do Featurable.
 
 ## Próximos passos combinados
 
-- Substituir `assets/images/hero-desktop.png` (977×515, fica borrada em telas
-  grandes) por uma versão em alta resolução (mínimo 1920 px de largura)
 - Substituir `assets/images/hero-mobile.png` (hoje um arquivo de baixa
   resolução, não utilizado) por um recorte vertical em boa qualidade, se
   quiser uma imagem dedicada para celular
