@@ -15,19 +15,21 @@
         if (otherButton === button) return;
 
         otherButton.setAttribute("aria-expanded", "false");
-        const otherPanel = otherButton
-          .closest(".accordion-item")
-          ?.querySelector(".accordion-panel");
-        if (otherPanel) otherPanel.hidden = true;
+        const otherItem = otherButton.closest(".accordion-item");
+        otherItem?.classList.remove("is-open");
+        otherItem
+          ?.querySelector(".accordion-panel")
+          ?.setAttribute("aria-hidden", "true");
       });
 
       button.setAttribute("aria-expanded", String(!isOpen));
-      if (panel) panel.hidden = isOpen;
+      item?.classList.toggle("is-open", !isOpen);
+      panel?.setAttribute("aria-hidden", String(isOpen));
     });
   });
 
   const revealTargets = document.querySelectorAll(
-    ".removal-hero-content, .removal-hero-visual, .removal-intro-grid, .removal-trust-grid article, .result-card, .treatment-card, .removal-process-intro, .removal-process li, .removal-about-symbol, .removal-about-content, .faq-layout, .contact-card",
+    ".removal-hero-content, .removal-intro-grid, .removal-trust-grid article, .result-card, .treatment-card, .removal-process-intro, .removal-process li, .specialty-item, .review-card, .reviews-summary, .removal-about-symbol, .removal-about-content, .faq-layout, .contact-card",
   );
 
   if (
@@ -36,7 +38,10 @@
   ) {
     document.documentElement.classList.add("reveal-ready");
 
-    revealTargets.forEach((element) => element.setAttribute("data-reveal", ""));
+    revealTargets.forEach((element, index) => {
+      element.setAttribute("data-reveal", "");
+      element.style.setProperty("--reveal-delay", `${(index % 4) * 90}ms`);
+    });
 
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {

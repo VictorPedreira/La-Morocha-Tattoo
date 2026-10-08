@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
   <url>
     <loc>https://www.lamorochatattoo.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/remocao-tatuagem-3.webp</image:loc>
+      <image:title>Remoção a laser de tatuagem preta de escrita no antebraço</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/remocao-tatuagem-2.webp</image:loc>
+      <image:title>Remoção a laser de tatuagem colorida</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/despigmentacao-2.webp</image:loc>
+      <image:title>Despigmentação a laser de micropigmentação de sobrancelha</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/remocao-nome.webp</image:loc>
+      <image:title>Clareamento a laser de tatuagem para cobertura</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/remocao-tatuagem.webp</image:loc>
+      <image:title>Evolução da remoção de tatuagem preta em três sessões</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/despigmentacao.webp</image:loc>
+      <image:title>Primeira sessão de despigmentação de sobrancelha</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lamorochatattoo.com/assets/images/onicomicose.webp</image:loc>
+      <image:title>Evolução do tratamento a laser de onicomicose</image:title>
+    </image:image>
   </url>
 </urlset>

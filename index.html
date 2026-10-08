@@ -5,29 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#12110f" />
 
-    <title>
-    La Morocha Tattoo | Remoção de Tatuagem e Micropigmentação em São Paulo
-    </title>
+    <title>Remoção de Tatuagem a Laser em São Paulo | La Morocha Tattoo</title>
 
-   <meta
-    property="og:description"
-    content="Remoção de tatuagem e micropigmentação com avaliação individual e cuidado com a sua pele."
-    >
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Remoção de tatuagem a laser, despigmentação de sobrancelha e tratamento de onicomicose em São Paulo. Avaliação individual, em português e espanhol."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="La Morocha Tattoo" />
     <link rel="canonical" href="https://www.lamorochatattoo.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:title" content="La Morocha Tattoo" />
+    <meta property="og:site_name" content="La Morocha Tattoo" />
+    <meta property="og:title" content="Remoção de Tatuagem a Laser em São Paulo | La Morocha Tattoo" />
     <meta
       property="og:description"
-      content="Arte, técnica e identidade na sua pele."
+      content="Remoção de tatuagem a laser e despigmentação de micropigmentação em São Paulo, com avaliação individual e cuidado com a sua pele."
     />
     <meta
       property="og:image"
       content="https://www.lamorochatattoo.com/assets/images/hero-desktop.png"
     />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="977" />
+    <meta property="og:image:height" content="515" />
+    <meta property="og:image:alt" content="La Morocha Tattoo — remoção de tatuagem e micropigmentação" />
     <meta property="og:url" content="https://www.lamorochatattoo.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Remoção de Tatuagem a Laser em São Paulo | La Morocha Tattoo" />
+    <meta
+      name="twitter:description"
+      content="Remoção de tatuagem a laser e despigmentação de micropigmentação em São Paulo, com avaliação individual."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lamorochatattoo.com/assets/images/hero-desktop.png"
+    />
+    <meta name="twitter:image:alt" content="La Morocha Tattoo — remoção de tatuagem e micropigmentação" />
 
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -42,23 +58,134 @@
       rel="stylesheet"
     />
 
+    <link rel="preload" as="image" href="assets/images/hero-desktop.png" fetchpriority="high" />
+
     <link rel="stylesheet" href="css/header-footer.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="business-jsonld">
       {
         "@context": "https://schema.org",
-        "@type": "HealthAndBeautyBusiness",
-        "name": "La Morocha Tattoo",
-        "url": "https://www.lamorochatattoo.com/",
-        "telephone": "+55 11 96226-9076",
-        "image": "https://www.lamorochatattoo.com/assets/images/hero-desktop.png",
-        "areaServed": {
-          "@type": "City",
-          "name": "São Paulo"
-        },
-        "sameAs": ["https://www.instagram.com/argentino_tattoo/"],
-        "availableLanguage": ["Portuguese", "Spanish"]
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.lamorochatattoo.com/#site",
+            "url": "https://www.lamorochatattoo.com/",
+            "name": "La Morocha Tattoo",
+            "inLanguage": "pt-BR",
+            "publisher": {
+              "@id": "https://www.lamorochatattoo.com/#negocio"
+            }
+          },
+          {
+            "@type": "TattooParlor",
+            "@id": "https://www.lamorochatattoo.com/#negocio",
+            "name": "La Morocha Tattoo",
+            "url": "https://www.lamorochatattoo.com/",
+            "description": "Remoção de tatuagem a laser, despigmentação de micropigmentação de sobrancelha, clareamento para cobertura e tratamento de onicomicose em São Paulo.",
+            "telephone": "+55 11 96226-9076",
+            "priceRange": "$$",
+            "image": [
+              "https://www.lamorochatattoo.com/assets/images/hero-desktop.png",
+              "https://www.lamorochatattoo.com/assets/images/remocao-tatuagem.webp",
+              "https://www.lamorochatattoo.com/assets/images/despigmentacao.webp"
+            ],
+            "logo": "https://www.lamorochatattoo.com/favicon-192.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "São Paulo",
+              "addressRegion": "SP",
+              "addressCountry": "BR"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "São Paulo"
+            },
+            "sameAs": [
+              "https://www.instagram.com/argentino_tattoo/"
+            ],
+            "knowsLanguage": [
+              "pt-BR",
+              "es"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Tratamentos",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Remoção de tatuagem a laser",
+                    "areaServed": "São Paulo"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Remoção de micropigmentação de sobrancelha",
+                    "areaServed": "São Paulo"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Clareamento de tatuagem para cobertura",
+                    "areaServed": "São Paulo"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tratamento de onicomicose a laser",
+                    "areaServed": "São Paulo"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.lamorochatattoo.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quantas sessões serão necessárias?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A quantidade varia conforme cor, profundidade, região, característica do pigmento, tempo da tatuagem e resposta do organismo. Uma avaliação é necessária para orientar o caso."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Tatuagens coloridas podem ser removidas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cada cor pode responder de forma diferente. A possibilidade de remoção ou clareamento deve ser analisada individualmente."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "É possível remover micropigmentação de sobrancelha?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim, dependendo do pigmento utilizado, da profundidade e das condições da região. O primeiro passo é fazer uma avaliação."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual é o intervalo entre as sessões?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O intervalo é definido conforme o procedimento realizado e a recuperação da pele. As orientações são passadas durante o atendimento."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -107,6 +234,7 @@
           <a href="#resultados">Resultados</a>
           <a href="#tratamentos">Tratamentos</a>
           <a href="#processo">Como funciona</a>
+          <a href="#avaliacoes">Avaliações</a>
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
 
@@ -131,14 +259,14 @@
       >
         <div class="container removal-hero-grid">
           <div class="removal-hero-content">
-            <p class="removal-eyebrow">
-              Remoção de tatuagem e micropigmentação
-            </p>
+            <h1 class="removal-eyebrow" id="hero-title">
+              Remoção de tatuagem e micropigmentação em São Paulo
+            </h1>
 
-            <h1 id="hero-title">
+            <p class="removal-hero-title">
               Sua pele pode contar
               <span>uma nova história.</span>
-            </h1>
+            </p>
 
             <p class="removal-hero-description">
               Tratamentos planejados de forma individual para remover ou clarear
@@ -157,7 +285,7 @@
                 <span aria-hidden="true">↗</span>
               </a>
 
-              <a class="button button-ghost" href="#resultados">
+              <a class="button button-ghost" href="#processo">
                 Conhecer o processo
               </a>
             </div>
@@ -167,22 +295,6 @@
               <li>Atendimento com hora marcada</li>
               <li>Português e espanhol</li>
             </ul>
-          </div>
-
-          <div class="removal-hero-visual" aria-hidden="true">
-            <div class="removal-symbol">
-              <img
-                src="favicon-192.png"
-                alt=""
-                width="192"
-                height="192"
-              >
-            </div>
-
-            <div class="removal-visual-text">
-              <span>La Morocha</span>
-              <strong>Laser removal</strong>
-            </div>
           </div>
         </div>
       </section>
@@ -261,13 +373,12 @@
           <div class="results-grid">
             <article class="result-card">
               <div class="result-visual">
-                <span class="result-label result-label-top">
-                  Antes
-                </span>
-
-                <span class="result-label result-label-bottom">
-                  Em tratamento
-                </span>
+                <img
+                  src="assets/images/remocao-tatuagem-3.webp"
+                  alt="Antes e depois da remoção a laser de tatuagem preta de escrita no antebraço, entre a 1ª e a 2ª sessão"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div class="result-content">
@@ -278,6 +389,12 @@
 
             <article class="result-card">
               <div class="result-visual">
+                <img
+                  src="assets/images/remocao-tatuagem-2.webp"
+                  alt="Antes e depois da remoção a laser de tatuagem colorida de gato"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="result-label result-label-top">
                   Antes
                 </span>
@@ -295,13 +412,12 @@
 
             <article class="result-card">
               <div class="result-visual">
-                <span class="result-label result-label-top">
-                  Antes
-                </span>
-
-                <span class="result-label result-label-bottom">
-                  Em tratamento
-                </span>
+                <img
+                  src="assets/images/despigmentacao-2.webp"
+                  alt="Antes e depois da despigmentação a laser de micropigmentação de sobrancelha"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div class="result-content">
@@ -310,8 +426,14 @@
               </div>
             </article>
 
-            <article class="result-card">
+            <article class="result-card result-card-mirror">
               <div class="result-visual">
+                <img
+                  src="assets/images/remocao-nome.webp"
+                  alt="Antes e depois do clareamento a laser de tatuagem de nome na nuca para cobertura"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="result-label result-label-top">
                   Antes
                 </span>
@@ -370,6 +492,10 @@
 
           <div class="treatments-grid">
             <article class="treatment-card">
+              <div class="treatment-media" aria-hidden="true">
+                <img src="assets/images/remocao-tatuagem-2.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+
               <span class="treatment-number">01</span>
 
               <div class="treatment-icon" aria-hidden="true">
@@ -399,6 +525,10 @@
             </article>
 
             <article class="treatment-card">
+              <div class="treatment-media" aria-hidden="true">
+                <img src="assets/images/despigmentacao-3.webp" alt="" style="object-position: center top" loading="lazy" decoding="async" />
+              </div>
+
               <span class="treatment-number">02</span>
 
               <div class="treatment-icon" aria-hidden="true">
@@ -426,6 +556,10 @@
             </article>
 
             <article class="treatment-card">
+              <div class="treatment-media" aria-hidden="true">
+                <img src="assets/images/remocao-nome.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+
               <span class="treatment-number">03</span>
 
               <div class="treatment-icon" aria-hidden="true">
@@ -575,14 +709,18 @@
                 </p>
 
                 <a
-                    href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de saber mais sobre remoção de tatuagem."
+                    href="https://wa.me/5511962269076?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20remo%C3%A7%C3%A3o%20de%20tatuagem."
                     class="specialty-link"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     Saiba mais sobre o tratamento
                     <span aria-hidden="true">↗</span>
                 </a>
+            </div>
+
+            <div class="specialty-media" aria-hidden="true">
+                <img src="assets/images/remocao-tatuagem-detalhe.webp" alt="" loading="lazy" decoding="async" />
             </div>
         </article>
 
@@ -607,14 +745,18 @@
                 </p>
 
                 <a
-                    href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de saber mais sobre despigmentação de sobrancelhas."
+                    href="https://wa.me/5511962269076?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20despigmenta%C3%A7%C3%A3o%20de%20sobrancelhas."
                     class="specialty-link"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     Solicitar uma avaliação
                     <span aria-hidden="true">↗</span>
                 </a>
+            </div>
+
+            <div class="specialty-media" aria-hidden="true">
+                <img src="assets/images/despigmentacao-detalhe.webp" alt="" loading="lazy" decoding="async" />
             </div>
         </article>
 
@@ -622,31 +764,34 @@
             <span class="specialty-number">03</span>
 
             <div class="specialty-content">
-                <span class="specialty-label">CORREÇÃO DE PIGMENTOS</span>
-                <h3>Dermopigmentação e tatuagens paramédicas</h3>
+                <span class="specialty-label">LASER PARA FUNGOS</span>
+                <h3>Tratamento de onicomicose</h3>
 
                 <p>
-                    Dermopigmentações ou tatuagens paramédicas que não alcançaram
-                    o resultado esperado podem ser avaliadas para remoção ou
-                    clareamento.
+                    A onicomicose é a infecção causada por fungos nas unhas, que
+                    pode deixá-las amareladas, espessas ou quebradiças. O laser
+                    atua de forma gradual sobre a área afetada.
                 </p>
 
                 <p>
-                    Isso inclui procedimentos como micropigmentação capilar,
-                    labial, camuflagens e pigmentações realizadas sobre cicatrizes.
-                    O planejamento considera a área tratada, o tipo de pigmento e
-                    a condição atual da pele.
+                    A quantidade de sessões varia conforme o grau de
+                    comprometimento da unha, e a evolução é acompanhada a cada
+                    etapa do tratamento.
                 </p>
 
                 <a
-                    href="https://wa.me/55SEUNUMERO?text=Olá! Gostaria de solicitar uma avaliação para remoção de dermopigmentação."
+                    href="https://wa.me/5511962269076?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20onicomicose."
                     class="specialty-link"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
-                    Conversar com a La Morocha
+                    Saiba mais sobre o tratamento
                     <span aria-hidden="true">↗</span>
                 </a>
+            </div>
+
+            <div class="specialty-media" aria-hidden="true">
+                <img src="assets/images/onicomicose-detalhe.webp" alt="" loading="lazy" decoding="async" />
             </div>
         </article>
 
@@ -657,6 +802,54 @@
 
     </div>
 </section>
+
+      <!-- AVALIAÇÕES GOOGLE -->
+      <section
+        class="reviews removal-section"
+        id="avaliacoes"
+        aria-labelledby="reviews-title"
+        data-google-reviews
+        data-featurable-id="COLOQUE_SEU_WIDGET_ID_AQUI"
+      >
+        <div class="container">
+          <div class="removal-section-heading">
+            <div>
+              <p class="removal-eyebrow">Quem já passou pela avaliação</p>
+              <h2 id="reviews-title">O que dizem no Google.</h2>
+            </div>
+
+            <p>
+              Avaliações reais de clientes, exibidas diretamente do perfil da
+              La Morocha Tattoo no Google.
+            </p>
+          </div>
+
+          <div class="reviews-summary" data-reviews-summary hidden>
+            <div class="reviews-score">
+              <strong data-reviews-rating>–</strong>
+              <div class="reviews-stars" data-reviews-stars aria-hidden="true"></div>
+              <span data-reviews-count></span>
+            </div>
+
+            <a
+              class="removal-text-link reviews-write"
+              data-reviews-write-link
+              href="https://share.google/xSorwOc66yfTf3s5g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Avaliar no Google
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="reviews-grid" data-reviews-grid>
+            <p class="reviews-placeholder" data-reviews-placeholder>
+              Carregando avaliações do Google…
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- SOBRE -->
       <section
@@ -735,7 +928,7 @@
                 </button>
               </h3>
 
-              <div class="accordion-panel" hidden>
+              <div class="accordion-panel" aria-hidden="true">
                 <p>
                   A quantidade varia conforme cor, profundidade, região,
                   característica do pigmento, tempo da tatuagem e resposta do
@@ -752,7 +945,7 @@
                 </button>
               </h3>
 
-              <div class="accordion-panel" hidden>
+              <div class="accordion-panel" aria-hidden="true">
                 <p>
                   Cada cor pode responder de forma diferente. A possibilidade de
                   remoção ou clareamento deve ser analisada individualmente.
@@ -768,7 +961,7 @@
                 </button>
               </h3>
 
-              <div class="accordion-panel" hidden>
+              <div class="accordion-panel" aria-hidden="true">
                 <p>
                   Sim, dependendo do pigmento utilizado, da profundidade e das
                   condições da região. O primeiro passo é fazer uma avaliação.
@@ -784,7 +977,7 @@
                 </button>
               </h3>
 
-              <div class="accordion-panel" hidden>
+              <div class="accordion-panel" aria-hidden="true">
                 <p>
                   O intervalo é definido conforme o procedimento realizado e a
                   recuperação da pele. As orientações são passadas durante o
@@ -867,7 +1060,8 @@
           <a href="#resultados">Resultados</a>
           <a href="#tratamentos">Tratamentos</a>
           <a href="#processo">Como funciona</a>
-          <a href="#sobre">Sobre</a>>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#sobre">Sobre</a>
         </div>
 
         <div class="footer-column">
@@ -920,5 +1114,6 @@
 
     <script src="js/header-footer.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/google-reviews.js" defer></script>
   </body>
 </html>
