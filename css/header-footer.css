@@ -183,15 +183,19 @@ button {
 .primary-navigation {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 2vw, 32px);
+  gap: clamp(16px, 1.6vw, 24px);
+}
+
+.primary-navigation > a {
+  white-space: nowrap;
 }
 
 .primary-navigation > a:not(.button) {
   position: relative;
   opacity: 0.76;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   transition: opacity var(--transition);
 }
@@ -723,5 +727,22 @@ main {
   .header-inner .brand {
     position: relative;
     z-index: 9999 !important;
+  }
+}
+/* Telas médias: menu completo não cabe ao lado da marca */
+@media (min-width: 981px) and (max-width: 1240px) {
+  .primary-navigation {
+    gap: 18px;
+  }
+
+  .primary-navigation > a:not(.button) {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .primary-navigation > a:first-child,
+  .primary-navigation .nav-cta {
+    display: none;
   }
 }
